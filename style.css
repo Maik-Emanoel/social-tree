@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: 'Poppins', sans-serif;
+  font-size: 62.5%;
+
+  --body-bg-color: #FAF7FD;
+  --purple: #BB99DD;
+
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background: var(--body-bg-color);
+}
+
+.container {
+  display: grid;
+  place-items: center;
+
+  margin-inline: auto;
+  margin-top: 12rem;
+}
+
+.profilePhoto img {
+  width: 20rem;
+  height: 20rem;
+
+  border: 2px solid #BB99DD;
+  border-radius: 50%;
+  padding: 6px 6px 7px 7px;
+
+
+  margin-bottom: 2.2rem;
+}
+
+.userInstagram {
+  color: var(--purple);
+  text-align: center;
+
+  font-size: 1.6rem;
+
+  text-align: center;
+
+  margin-bottom: 3.3rem;
+}
+
+.userInstagram a {
+  text-decoration: none;
+}
+
+.links ul {
+  list-style: none;
+}
+
+
+.links ul li {
+  width: 32.6rem;
+  height: 4.9rem;
+  
+  border: 2px solid var(--purple);
+  border-radius: 0.4rem;
+
+  margin-bottom: 1.6rem;
+  margin-inline: 1.8rem;
+}
+
+.links ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+
+  font-size: 1.6rem;
+  font-weight: 600;
+
+  color: var(--purple);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 1.2rem auto;
+}
+
+.links ul li:last-child {
+  margin-bottom: 6.8rem;
+}
+
+.socialLinks ul {
+  list-style: none;
+
+  display: flex;
+  flex-direction: row;
+  gap: 2.9rem;
+
+  margin-bottom: 15.5rem;
+}
+
+/* ========= RESPONSIVIDADE ===================== */
+
+@media (max-width: 360px) {
+  .links ul li {
+    width: 30rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    margin-top: 18rem;
+  }
+  .links ul li {
+    width: 32.6rem;
+  }
+}
+
