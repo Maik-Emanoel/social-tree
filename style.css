@@ -9,13 +9,14 @@
   font-size: 62.5%;
 
   --body-bg-color: #FAF7FD;
+  --body-bg-color-modified: linear-gradient(295deg, rgba(8,60,93,1) 5%, rgba(6,8,75,1) 95%);
   --purple: #BB99DD;
 
   -webkit-font-smoothing: antialiased;
 }
 
 body {
-  background: var(--body-bg-color);
+  background: var(--body-bg-color-modified);
 }
 
 .container {
@@ -101,18 +102,19 @@ body {
 
 /* ========= RESPONSIVIDADE ===================== */
 
+@media (min-width: 1024px) {
+  .container {
+    margin-top: 14rem;
+  }
+  .links ul li {
+    width: 32.6rem;
+  }
+}
+
 @media (max-width: 360px) {
   .links ul li {
     width: 30rem;
   }
 }
 
-@media (min-width: 1024px) {
-  .container {
-    margin-top: 18rem;
-  }
-  .links ul li {
-    width: 32.6rem;
-  }
-}
 
