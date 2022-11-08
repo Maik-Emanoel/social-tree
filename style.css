@@ -13,10 +13,19 @@
   --purple: #BB99DD;
 
   -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
+  background: var(--body-bg-color);
+}
+
+body.blue {
   background: var(--body-bg-color-modified);
+}
+
+.userInstagram a.blue {
+  color: var(--body-bg-color);
 }
 
 .container {
@@ -28,15 +37,21 @@ body {
 }
 
 .profilePhoto img {
-  width: 20rem;
-  height: 20rem;
+  width: 18rem;
+  height: 18rem;
 
   border: 2.5px solid #BB99DD;
   border-radius: 50%;
   padding: 6px 6px 7px 7px;
 
-
   margin-bottom: 2.2rem;
+  cursor: pointer;
+
+  transition: transform .3s;
+}
+
+.profilePhoto img:hover {
+  transform: scale(1.07);
 }
 
 .userInstagram {
@@ -52,7 +67,7 @@ body {
 
 .userInstagram a {
   text-decoration: none;
-  color: var(--body-bg-color);
+  color: var(--purple);
   opacity: .7;
 
   transition: opacity .3s;
@@ -121,8 +136,6 @@ body {
 .socialLinks ul li:hover {
   transform: translateY(-6px);
 }
-
-
 
 /* ========= RESPONSIVIDADE ===================== */
 
