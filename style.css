@@ -26,7 +26,7 @@ body.blue {
 }
 
 .userInstagram a.blue {
-  color: var(--body-bg-color);
+  color: var(--purple);
 }
 
 .container {
@@ -56,7 +56,6 @@ body.blue {
 }
 
 .userInstagram {
-  color: var(--purple);
   text-align: center;
 
   font-size: 1.6rem;
